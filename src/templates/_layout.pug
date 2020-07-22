@@ -1,0 +1,14 @@
+doctype html
+
+block locals
+  - var title = '';
+
+html(lang="ja")
+  head
+    mate(charset="UTF-8")
+    mate(name='viewport' content="width=device-width, initial-scale=1.0")
+    title #{title}
+  body
+    .container
+      include _menu.pug
+      block content
