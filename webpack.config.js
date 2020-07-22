@@ -31,7 +31,6 @@ module.exports = {
             options: {
               presets: [
                 ['@babel/preset-env', { 'targets': '> 0.25%, not dead' }],
-                '@babel/preset-react',
               ],
             },
           },
@@ -103,10 +102,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/templates/access.pug',
       filename: 'access.html',
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/templates/members/taro.pug',
-      filename: 'members/taro.html',
     }),
     new CleanWebpackPlugin(),
   ],
